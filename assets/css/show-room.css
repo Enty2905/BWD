@@ -1,0 +1,227 @@
+.header {
+    position: sticky;
+}
+
+.pt {
+    margin: 50px 0 0;
+    background-color: white;
+}
+
+.pt p {
+    margin: 0;
+}
+
+.pt .btn-left,
+.pt .btn-right {
+    color: var(--color2);
+    position: absolute;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    background: white;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.pt .btn-left:active,
+.pt .btn-right:active {
+    transform: scale(0.9);
+}
+
+.pt .btn-left {
+    top: -20px;
+    left: 42%;
+}
+
+.pt .btn-right {
+    bottom: -5px;
+    left: 42%;
+}
+
+.pt .inner-slide {
+    position: relative;
+}
+
+.pt .inner-left {
+    margin-bottom: 30px;
+}
+
+.pt .inner-left .inner-slide .slide {
+    margin-top: -3px;
+    max-height: 520px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+}
+
+.pt .inner-left  .inner-slide img {
+    margin-bottom: 27px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.pt .inner-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pt .inner-center .inner-title {
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+.pt .inner-center .inner-head img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 9px;
+}
+
+.pt .inner-center .inner-head figcaption {
+    color: var(--color2);
+    margin-top: 20px;
+    font-size: 2.0rem;
+}
+
+.pt .inner-center .inner-head figure figcaption>p {
+    margin-bottom: 10px;
+}
+
+.pt .inner-center .inner-head .inner-location {
+    display: inline-block;
+}
+
+.pt .inner-center .inner-head a {
+    display: flex;
+    align-items: center;
+    color: var(--color2);
+
+}
+
+.pt .inner-center .inner-head p {
+    display: flex;
+    align-items: center;
+}
+
+.pt .inner-center .inner-head a p {
+    margin-left: 10px;
+}
+
+.pt .inner-center .inner-head .inner-title {
+    font-weight: 500;
+    font-size: 3.0rem;
+}
+
+.pt .inner-center .inner-content {
+    color: black;
+    padding: 20px 0;
+    border-top: 1px solid grey;
+}
+
+.pt .inner-center .inner-content .inner-overview .inner-head {
+    display: flex;
+}
+
+.pt .inner-center .inner-content .inner-overview .inner-head .inner-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.pt .inner-center .inner-content .inner-utilities {
+    margin-top: 20px;
+}
+
+.pt .inner-center .inner-content .inner-utilities .utilities .inner-box {
+    margin-bottom: 20px;
+}
+
+.pt .inner-center .inner-content .inner-utilities .utilities .inner-box .inner-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.pt .inner-center .inner-content .inner-utilities .utilities .inner-box ul {
+    padding: 0;
+}
+
+.pt .inner-center .inner-content .inner-utilities .utilities .inner-box ul li {
+    margin-bottom: 5px;
+}
+
+.pt .inner-center .inner-center-location {
+    padding-bottom: 20px;
+}
+
+.pt .inner-center .inner-center-location .inner-location a {
+    display: flex;
+    align-items: center;
+    color: var(--color2);
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.pt .inner-center .inner-center-location .inner-location a i {
+    margin-right: 10px;
+}
+
+.pt .inner-center .inner-center-location iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.pt .inner-right .inner-other:first-child {
+    margin-top: 0;
+}
+
+.pt .inner-img img {
+    width: 255px;
+    height: 191px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pt .inner-right .inner-other {
+    color: black;
+    font-size: 1.8rem;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.pt .inner-right h5{
+    font-size: 1.8rem;
+}
+.pt .inner-right .inner-other .location {
+    display: flex;
+    align-items: center;
+}
+
+.pt .inner-right .inner-other .location p {
+    margin-left: 10px;
+}
+@media (max-width: 767px) {
+    .pt .inner-left .inner-slide .slide {
+        height: 200px;
+    }
+    .pt .inner-left .inner-slide .slide img{
+        height: 200px;
+    }
+}
+@media (max-width: 415px) {
+
+    .pt .inner-center .inner-head figure img {
+        height: 300px;
+    }
+    .pt .btn-right {
+        bottom: -20px;
+    }
+}
