@@ -3,14 +3,18 @@ const header = document.querySelector(".header");
 const headerOriginalTop = header.getBoundingClientRect().top;
 
 window.addEventListener("scroll", function () {
-    if (window.pageYOffset > headerOriginalTop + 30) {
-        header.style.background = "#fff";
-        header.style.borderBottom = "1px solid grey"
-        header.style.transition = "1s ease-in-out";
-    } else {
-        header.style.background = "transparent";
-        header.style.transition = "1s ease-in-out";
-        header.style.borderBottom = "none"
+    if (window.pageYOffset === 0) {
+        header.classList.remove("scrolled");
+        header.style.transform = "translateY(-100%)";
+        
+        setTimeout(() => {
+            header.style.transition = "transform .7s ease-in-out";
+            header.style.transform = "translateY(0)";
+        }, 10);
+    } else if (window.pageYOffset > headerOriginalTop + 30) {
+        header.classList.add("scrolled");
+        header.style.transition = "none";
+        header.style.transform = "translateY(0)";
     }
 });
 //Mobile menu

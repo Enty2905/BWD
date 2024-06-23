@@ -90,13 +90,12 @@
     width: 100%;
     top: 0;
     z-index: 100;
-    transition: 1s ease-in-out;
-    /* background: rgba(103, 198, 199, 0.06); */
-    /* background: linear-gradient(0deg, rgba(103, 198, 199, 0.06) 20%, rgba(210, 251, 252, 1) 80%); */
-    /* background: -webkit-linear-gradient(0deg, rgba(103, 198, 199, 0.06) 20%, rgba(210, 251, 252, 1) 80%); */
     background: transparent;
-    /* background: -moz-linear-gradient(0deg, rgba(103, 198, 199, 0.06) 20%, rgba(210, 251, 252, 1) 80%); */
-    transition: 1s ease-in-out;
+}
+
+.header.scrolled {
+    background: #fff;
+    border-bottom: 1px solid grey;
 }
 
 .header .inner-head {

@@ -2,14 +2,9 @@ img {
     width: 100%;
 }
 
-.inner-regiester {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
 .inner-img {
-    width: 50%;
+    width: 90%;
+    margin-left: auto;
 }
 
 .inner-img .image {
@@ -18,15 +13,17 @@ img {
     object-fit: cover;
 }
 
-.inner-form {
-    flex-grow: 1;
+.register .btn-register {
+    margin-top: 25px;
 }
-.regiester .btn-register a {
+
+.register .btn-register a {
     color: var(--color2);
     font-weight: 900;
     text-align: center;
     width: 100%;
 }
+
 .inner-form .form {
     padding: 70px 0;
 }
@@ -37,35 +34,21 @@ img {
     font-weight: 900;
 }
 
-.auth-options {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 
-.auth-options .remember {
+.inner-line {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: grey;
-}
-
-.inner-regiester .inner-line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.inner-regiester .inner-line div {
+.inner-line div {
     width: 100%;
     height: 1px;
     background-color: grey;
 }
 
-.inner-regiester .inner-line span {
+.inner-line span {
     color: var(--color2);
     font-weight: 900;
 }
@@ -77,40 +60,60 @@ img {
 
 .login-options span {
     flex-grow: 1;
-    text-align: center;
     font-weight: 900;
     color: var(--color2);
 }
 
-.inner-regiester .login {
+.login {
     display: flex;
-    align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 10px;
 }
 
-.inner-regiester .login span {
+.login span {
     color: grey;
 }
 
-.inner-regiester .login a {
+.login a {
     color: var(--color2);
     font-weight: 600;
 }
 
-input[type="text"],
-button,
-input[type="password"] {
+.register button,
+.register input {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 1.6rem;
 }
 
-button {
+.register button {
     width: 100%;
     background-color: white;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+    .inner-img {
+        display: none;
+    }
+
+    .register {
+        position: relative;
+        background: url('../image/login.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .register::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #2624243c;
+    }
+
 }
